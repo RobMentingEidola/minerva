@@ -8,12 +8,13 @@
   <title>Minerva</title>
   <style>
     :root {
-      --ink: #172a33;
-      --muted: #627078;
-      --paper: #f4efe7;
-      --paper-light: #fbfaf7;
-      --coral: #d8664e;
-      --line: rgba(23, 42, 51, .16);
+      --ink: #f5ead4;
+      --muted: #c7b79c;
+      --paper: #211918;
+      --paper-light: #fff8e8;
+      --coral: #c7943e;
+      --burgundy: #792f35;
+      --line: rgba(245, 234, 212, .2);
       --serif: Georgia, 'Times New Roman', serif;
       --sans: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
@@ -64,7 +65,7 @@
       display: grid;
       place-items: center;
       color: var(--paper-light);
-      background: var(--coral);
+      background: var(--burgundy);
       border-radius: 50%;
       font-family: var(--serif);
       font-size: 1.25rem;
@@ -135,6 +136,12 @@
       text-transform: uppercase;
     }
 
+    .section-link {
+      display: flex;
+      width: max-content;
+      margin-bottom: 18px;
+    }
+
     .primary-link span {
       color: var(--coral);
       font-size: 1.45rem;
@@ -158,7 +165,7 @@
       left: -10%;
       width: 70%;
       height: 68%;
-      border: 1px solid rgba(216, 102, 78, .55);
+      border: 1px solid rgba(199, 148, 62, .65);
       border-radius: 50%;
       transform: rotate(-18deg);
     }
@@ -170,7 +177,7 @@
       margin-left: auto;
       object-fit: cover;
       object-position: center;
-      filter: saturate(.78);
+      filter: saturate(.9) contrast(1.04);
     }
 
     .caption {
@@ -230,11 +237,12 @@
       <section class="intro" aria-labelledby="page-title">
         <h1 id="page-title">Minerva</h1>
         <p class="lead">Op deze website vind je teksten en vertalingen van de methode Latijn Minerva.</p>
+        <a class="primary-link section-link" href="alpheios.html">Ga naar Alpheios <span aria-hidden="true">&#8594;</span></a>
         <a class="primary-link" href="mailto:info@robmenting.com">Neem contact op <span aria-hidden="true">&#8594;</span></a>
       </section>
 
       <figure class="visual">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Skulptur_der_Minerva.jpg" alt="Beeld van de Romeinse godin Minerva">
+        <img src="assets/Minerva%20Godin.png" alt="Beeld van de Romeinse godin Minerva">
         <figcaption class="caption">Minerva, godin van wijsheid, kunsten en wetenschap.</figcaption>
       </figure>
     </main>
